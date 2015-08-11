@@ -1,0 +1,93 @@
+<html>
+<head>
+	<title>Brouhaha</title>
+	<!-- css connect -->
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<!-- font awesome -->
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+	<!-- jquery must be before materialize -->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<!-- Materialize -->
+		<!--Materialize Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+		<!--Materialize Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+		<!--Materialize Font -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+</head>
+<body>
+	<div class="navbar-fixed">
+		<nav class="black">
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="#logo" class="brand-logo center">Brouhaha</a>
+					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+					<ul class="right hide-on-med-and-down">
+						<li><a href="#about">About</a></li>
+						<li><a href="#subscribe">Subscribe</a></li>
+					</ul>
+						<ul class="side-nav" id="mobile-demo">
+						<li><a href="#about">About</a></li>
+						<li><a href="#subscribe">Subscribe</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<!-- <div class="container"> -->
+
+		<div class="parallax-container center">
+			<img id="logo" class="responsive-img section scrollspy" src="images/black_logo.png">
+			<div class="parallax test"><img src="images/image1.png"></div>
+		</div>
+		<div class="section black white-text center">
+			<div class="row container">
+			<h2 id="about" class="header section scrollspy">About Brouhaha</h2>
+			<p class="white-text center">Brouhaha is a Bay Area homegrown Music and Arts collective that delivers an oddball, forward-thinking experience to dancefloors in San Francisco, Oakland, and beyond. Conceived in a living room in 2013, the ruckus quickly grew into a community of friends and music lovers alike.
+			<br>Despite the collective's growth, the mission has been the same since it's inception: to provide diverse, club-ready music in an attitude-free environment. At the heart of our events, the house party that started it all lives on. From the house to the warehouse... Brouhaha ain't no laughing matter!</p>
+			<h4>Booking / Inquiries</h4>
+			<h5>BROUHAHASF@GMAIL.COM</h5>
+			<h5><i class="fa fa-facebook"></i> <i class="fa fa-twitter"></i> <i class="fa fa-soundcloud"></i></h5>
+			</div>
+		</div>
+		<div class="parallax-container">
+			<div class="parallax"><img src="images/image2.png"></div>
+		</div>
+		<div class="section black">
+			<div class="row container">
+			<h2 id="subscribe" class="header white-text section scrollspy">Subscribe to Brouhaha!</h2>
+			<div class="row">
+				<form class="col s12">
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="email" type="email" class="validate white-text">
+							<label for="email" data-error="wrong" data-success="right">Email</label>
+						</div>
+					</div>
+				</form>
+			</div>
+			</div>
+		</div>
+
+
+
+
+	<!-- </div> -->
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// nav bar
+			$(".button-collapse").sideNav();
+			//parallax
+			$('.parallax').parallax();
+			//scrollspy
+			$('.scrollspy').scrollSpy();
+		})
+	</script>
+
+</body>
+</html>
+
